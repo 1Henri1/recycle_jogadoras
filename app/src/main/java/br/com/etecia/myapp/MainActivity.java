@@ -23,11 +23,17 @@ public class MainActivity extends AppCompatActivity {
         listaJogadoras = new ArrayList<>();
 
         listaJogadoras.add(
-                new Jogadoras("Apocalipse",
-                        "Fim do mundo uhull",
-                        "action",
-                        "",
+                new Jogadoras("Adriana",
+                        "1° Lugar na Copa Libertadores Feminina, 1° Lugar na Copa America Feminina, 4° Lugar no Campeonato Brasileiro Feminino, 1° Lugar na Supercopa do Brasil Feminina",
+                        "Adriana Leal joga na posição de Atacante.",
+                        "Orlando Pride–EUA",
                         R.drawable.adriana));
+        listaJogadoras.add(
+        new Jogadoras("Adriana",
+                "1° Lugar na Copa Libertadores Feminina, 1° Lugar na Copa America Feminina, 4° Lugar no Campeonato Brasileiro Feminino, 1° Lugar na Supercopa do Brasil Feminina",
+                "Adriana Leal joga na posição de Atacante.",
+                "Orlando Pride–EUA",
+                R.drawable.adriana));
 
 
 
