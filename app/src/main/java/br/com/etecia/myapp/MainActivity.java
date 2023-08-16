@@ -11,7 +11,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    List<Filmes> listaFilmes;
+    List<Jogadoras> listaJogadoras;
     RecyclerView idRecyclerView;
 
     @Override
@@ -19,57 +19,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        idRecyclerView = findViewById(R.id.listaFilmes);
-        listaFilmes = new ArrayList<>();
+        idRecyclerView = findViewById(R.id.listaJogadoras);
+        listaJogadoras = new ArrayList<>();
 
-        listaFilmes.add(
-                new Filmes("Apocalipse",
+        listaJogadoras.add(
+                new Jogadoras("Apocalipse",
                         "Fim do mundo uhull",
                         "action",
-                        R.drawable.apocalipe));
-        listaFilmes.add(
-                new Filmes("Desejos",
-                        "Fim do mundo uhull",
-                        "action",
-                        R.drawable.desejos));
-        listaFilmes.add(
-                new Filmes("Dois e Sessenta e Sete",
-                        "Fim do mundo uhull",
-                        "action",
-                        R.drawable.doismilesessetnaesete));
-        listaFilmes.add(
-                new Filmes("Folha",
-                        "Fim do mundo uhull",
-                        "action",
-                        R.drawable.folha));
-        listaFilmes.add(
-                new Filmes("Interrogação",
-                        "Fim do mundo uhull",
-                        "action",
-                        R.drawable.interrogacao));
-        listaFilmes.add(
-                new Filmes("Apocalipse",
-                        "Fim do mundo uhull",
-                        "action",
-                        R.drawable.medo));
-        listaFilmes.add(
-                new Filmes("Apocalipse",
-                        "Fim do mundo uhull",
-                        "action",
-                        R.drawable.menina));
-        listaFilmes.add(
-                new Filmes("Apocalipse",
-                        "Fim do mundo uhull",
-                        "action",
-                        R.drawable.pontabala));
-        listaFilmes.add(
-                new Filmes("Apocalipse",
-                        "Fim do mundo uhull",
-                        "action",
-                        R.drawable.rei_montanha));
+                        "",
+                        R.drawable.adriana));
 
 
-        MyAdapter adapter = new MyAdapter(getApplicationContext(), listaFilmes);
+
+        MyAdapter adapter = new MyAdapter(getApplicationContext(), listaJogadoras);
 
         idRecyclerView.setLayoutManager(new
                 GridLayoutManager(

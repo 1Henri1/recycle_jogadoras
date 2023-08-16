@@ -1,18 +1,27 @@
 package br.com.etecia.myapp;
 
-public class Filmes {
+public class Jogadoras {
 
-    private String titulo, descricao, categoria;
+    private String nome,titulo, descricao, time;
     private int image;
 
     // criar o construtor com parametros alt+insert
 
 
-    public Filmes(String titulo, String descricao, String categoria, int image) {
+    public Jogadoras(String nome, String titulo, String descricao, String time, int image) {
+        this.nome = nome;
         this.titulo = titulo;
         this.descricao = descricao;
-        this.categoria = categoria;
+        this.time = time;
         this.image = image;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getTitulo() {
@@ -31,12 +40,12 @@ public class Filmes {
         this.descricao = descricao;
     }
 
-    public String getCategoria() {
-        return categoria;
+    public String getTime() {
+        return time;
     }
 
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
+    public void setTime(String time) {
+        this.time = time;
     }
 
     public int getImage() {

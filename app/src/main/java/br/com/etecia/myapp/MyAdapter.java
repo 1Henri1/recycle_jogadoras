@@ -15,11 +15,11 @@ import java.util.List;
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
     private Context mContexto;
-    private List<Filmes> lstFilmes;
+    private List<Jogadoras> lstJogadoras;
 
-    public MyAdapter(Context mContexto, List<Filmes> lstFilmes) {
+    public MyAdapter(Context mContexto, List<Jogadoras> listaJogadoras) {
         this.mContexto = mContexto;
-        this.lstFilmes = lstFilmes;
+        this.lstJogadoras = lstJogadoras;
     }
 
     @NonNull
@@ -29,7 +29,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         View view;
 
                 LayoutInflater inflater = LayoutInflater.from(mContexto);
-                view = inflater.inflate(R.layout.modelo_filmes, parent, false);
+                view = inflater.inflate(R.layout.modelo_jogadoras, parent, false);
 
         return new ViewHolder(view);
     }
@@ -37,26 +37,26 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
-    holder.idTituloFilmes.setText(lstFilmes.get(position).getTitulo());
-    holder.idImageFilmes.setImageResource(lstFilmes.get(position).getImage());
+    holder.idNomeJogadoras.setText(lstJogadoras.get(position).getTitulo());
+    holder.idImgJogadoras.setImageResource(lstJogadoras.get(position).getImage());
     }
 
     @Override
     public int getItemCount() {
-        return lstFilmes.size();
+        return lstJogadoras.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
 
-        TextView idTituloFilmes;
-        ImageView idImageFilmes;
-        CardView idCardFilmes;
+        TextView idNomeJogadoras;
+        ImageView idImgJogadoras;
+        CardView idCardJogadoras;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-        idTituloFilmes = itemView.findViewById(R.id.idTituloFilmes);
-        idCardFilmes = itemView.findViewById(R.id.idCardFilmes);
-        idImageFilmes = itemView.findViewById(R.id.idImgFilmes);
+            idNomeJogadoras = itemView.findViewById(R.id.idNomeJogadoras);
+            idCardJogadoras = itemView.findViewById(R.id.idCardJogadoras);
+            idImgJogadoras = itemView.findViewById(R.id.idImgJogadoras);
         }
     }
 

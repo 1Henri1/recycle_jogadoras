@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/idCardFilmes"
+    android:id="@+id/idCardJogadoras"
     android:layout_width="190dp"
     android:layout_height="260dp"
     android:clickable="true"
@@ -17,17 +17,17 @@
         <ImageView
             android:layout_width="180dp"
             android:layout_height="200dp"
-            android:id="@+id/idImgFilmes"
+            android:id="@+id/idImgJogadoras"
             android:scaleType="centerCrop"
-            android:src="@drawable/rei_montanha"/>
+            android:src="@drawable/adriana"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/idTituloFilmes"
+            android:id="@+id/idNomeJogadoras"
             android:layout_gravity="center_horizontal"
             android:layout_margin="10dp"
-            android:text="O Rei da Montanha"
+            android:text="Adriana"
             android:textColor="#000"
             android:textSize="15sp"
             android:textStyle="bold"/>
